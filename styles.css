@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0rem;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(235,230,230);
+    color: #333;
+    font-family: 'arial', sans-serif;
+}
+
+/*-------header-------*/
+
+.header {
+    background-color: #ffffff;
+    padding: 1rem 4rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*-----navbar------*/
+.header > .navbar{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header > .navbar > .logo{
+    font-size: 2.5rem;
+    color:rgb(250, 173, 29);
+    transition: 0.5s;
+    position: relative;
+}
+
+.header > .navbar > .logo:hover{
+    transition: 0.5s;
+    text-shadow: #93c0c0 2px 2px 2px;
+}
+
+.header > .navbar > .nav-menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+.header > .navbar > .nav-menu >.nav-item{
+    margin-left: 2rem;   
+}
+
+.header > .navbar > .nav-menu >.nav-item > a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:#333;
+    transition: 0.5s;
+}
+
+.header > .navbar > .nav-menu >.nav-item > a:hover{
+    transition: 0.5s;
+    text-shadow: #333 2px 2px 2px;
+    color:rgb(250, 173, 29);
+}
+
+.menu-toggle{
+display: none;
+margin-left: auto;
+}
+
+.hamburger-menu{
+display: none;
+flex-direction: column;
+cursor: pointer;
+position: relative;
+margin-left: auto;
+z-index: 1;
+}
+
+.hamburger-menu .line{
+   width: 30px;
+   height: 3px;
+   background-color: #ff7606;
+   margin: 5px;
+   transition: all 0.3s ease;
+}
+
+.container{
+    width: 90vw;
+    margin:2rem auto;
+}
+
+/*------ main content------*/
+
+.hero {
+background-image: url(https://www.gastronosfera.com/sites/default/files/uploads/2019/01/pupusas.jpg);
+height: 80vh;
+background-position: center;
+background-size: cover;
+justify-content: center;
+text-align: center;
+align-items: center;
+align-content: center;
+padding: 2rem;
+border-radius: 1rem;
+transition: 0.5s;
+color:white;
+}
+
+.hero:hover {
+transition: 0.5s;
+box-shadow: 0 0.2rem 1.3rem rgba(250, 173, 29);
+}
+
+.hero>h2{
+    font-size: 3.4rem;
+    text-shadow: rgba(250, 173, 29) 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+
+.hero>p{
+    font-size: 1.2rem;
+    margin:1rem;
+    margin-bottom: 2rem;
+}
+
+.hero>a{ 
+   color: white;
+   font-size: 1.2rem;
+   padding: 1rem 2rem;
+   text-decoration: none;
+   border-radius: 3rem;
+   background-color: rgba(250, 173, 29);
+   transition: 0.5s;
+   border:none;
+}
+
+.hero>a:hover{ 
+    box-shadow: 0 0.2rem 1.3rem rgba(9, 9, 9, 0.5);
+    transition: 0.5s;
+    font-size: 1.15rem;
+}
+
+/*------ menu------*/
+
+.menu{
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.menu>h3{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu > .menu-items-container{
+display: flex;
+justify-content: center;
+justify-content: space-around;
+
+}
+
+.menu .menu-items{
+    width: 28%;
+    height: 40vh;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.048);
+    transition: 0.5;
+}
+
+.menu .menu-items:hover{
+    transform: translateY(-1rem);
+    transition: 0.5;
+}
+.menu > .menu-items-container>.menu-items>img{
+    width: 100%;
+    max-width: 90%;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.menu > .menu-items-container>.menu-items>p{
+   font-size: 1rem; 
+   color: gray;
+}
+
+.reserva{
+    background-color: rgb(235, 230, 230);
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    padding: 4rem 1rem;
+
+}
+.reserva h5{
+
+text-align: center;  
+font-size: 2rem;
+margin-bottom: 1rem;  
+}
+.reserva .form-reserva{
+    display: grid;
+    grid-gap: 1rem;
+    background-color: #fff;
+    width: 40%;
+    height: 60vh;
+    display: grid;
+    padding: 2rem;
+    border-radius: 1rem;
+    
+}
+.reserva .form-reserva input,
+.reserva .form-reserva textarea{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.05rem solid gray;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.reserva .form-reserva button{
+   color: white;
+   font-size: 1.2rem;
+   padding: 1rem 2rem;
+   text-decoration: none;
+   border-radius: 3rem;
+   background-color: rgba(250, 173, 29);
+   transition: 0.5s;
+   border:none;
+}
+
+.reserva .form-reserva button:hover{
+    font-size: 1.5rem;
+    box-shadow: 0 0.2rem 1.3rem rgba(9, 9, 9, 0.5);
+}
+
+.contacto{
+    padding: 4rem 1rem;
+    text-align: center;
+    background: rgb(235,230,230);
+    background: linear-gradient(180deg, rgba(235,230,230,1) 80%, rgba(243,176,43,1) 100%);
+    
+}
+.contacto h6{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contacto p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+   
+.contacto ul{
+    list-style: none;
+    font-size: 1.1rem;
+    color:gray;
+}
+
+.contacto li {
+    margin-bottom: 1rem;
+}
+   
+.footer{
+    background-color: rgba(250, 173, 29);
+    text-align: center;
+    padding: 1rem;
+    color:#ffffff;
+    font-size: 1.1rem;
+}
+
+/*------ mediaquery------*/
+
+@media(max-width: 530px){
+   
+    body{
+         width: 100%;
+    }
+    
+    .header{
+        width: 165vw;
+    }
+        
+        
+    .header > .navbar{
+        max-width: 100%;
+    }
+    
+    .header > .navbar > .nav-menu >.nav-item > a{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    
+    .hero{
+        width: 155vw;
+    }
+    
+    .menu>h3{
+        margin-left: 11.8rem;
+    }
+    .menu .menu-items-container .menu-items{
+        height: 33vh;
+    }
+    
+    .menu .menu-items-container{
+        width: 150vw; 
+        margin-bottom: -6rem;
+        margin-left: -0.9rem;
+    }
+    
+    .reserva>h5{
+        margin-left: 13.6rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .reserva .form-reserva{
+        margin-left: 14rem;
+        width: 135vw;
+        margin-right: 0.6rem;
+    
+    }
+    
+    .contacto{
+        width: 165vw;
+        margin-bottom: -0.1rem;
+    }
+    .footer{
+        width: 165vw;
+    }
+
+.hamburger-menu{
+    display: flex;
+    order: 2;
+    margin-left: 10rem;
+}
+
+.header > .navbar > .nav-menu{
+    position: fixed;
+    top: 80px;
+    right: -70%;
+    width: 28%;
+    height: calc(100vh - 50%);
+    transition: right 0.3s ease;
+    background: #ffffff;
+    padding-top: 1rem;
+    flex-direction: column;
+    border-radius: 0.8rem;
+}
+
+.header > .navbar > .nav-menu li{
+    margin-bottom: 0.2rem;
+
+}
+
+#menu-toggle:checked ~ .nav-menu {
+    right: 0;
+}
+
+}
+
