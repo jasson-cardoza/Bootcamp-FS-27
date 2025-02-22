@@ -62,28 +62,6 @@ body{
     color:rgb(250, 173, 29);
 }
 
-.menu-toggle{
-display: none;
-margin-left: auto;
-}
-
-.hamburger-menu{
-display: none;
-flex-direction: column;
-cursor: pointer;
-position: relative;
-margin-left: auto;
-z-index: 1;
-}
-
-.hamburger-menu .line{
-   width: 30px;
-   height: 3px;
-   background-color: #ff7606;
-   margin: 5px;
-   transition: all 0.3s ease;
-}
-
 .container{
     width: 90vw;
     margin:2rem auto;
@@ -277,87 +255,27 @@ margin-bottom: 1rem;
 @media(max-width: 530px){
    
     body{
-         width: 100%;
-    }
-    
-    .header{
-        width: 165vw;
-    }
-        
-        
-    .header > .navbar{
-        max-width: 100%;
-    }
-    
-    .header > .navbar > .nav-menu >.nav-item > a{
-        width: 100%;
-        padding: 10px 20px;
-    }
-    
-    .hero{
-        width: 155vw;
-    }
-    
-    .menu>h3{
-        margin-left: 11.8rem;
-    }
-    .menu .menu-items-container .menu-items{
-        height: 33vh;
-    }
-    
-    .menu .menu-items-container{
-        width: 150vw; 
-        margin-bottom: -6rem;
-        margin-left: -0.9rem;
-    }
-    
-    .reserva>h5{
-        margin-left: 13.6rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .reserva .form-reserva{
-        margin-left: 14rem;
-        width: 135vw;
-        margin-right: 0.6rem;
-    
-    }
-    
-    .contacto{
-        width: 165vw;
-        margin-bottom: -0.1rem;
-    }
-    .footer{
-        width: 165vw;
-    }
-
-.hamburger-menu{
-    display: flex;
-    order: 2;
-    margin-left: 10rem;
+         width: 192vw;
 }
 
-.header > .navbar > .nav-menu{
-    position: fixed;
-    top: 80px;
-    right: -70%;
-    width: 28%;
-    height: calc(100vh - 50%);
-    transition: right 0.3s ease;
-    background: #ffffff;
-    padding-top: 1rem;
-    flex-direction: column;
-    border-radius: 0.8rem;
+.header{
+    width: 192vw;
 }
-
-.header > .navbar > .nav-menu li{
-    margin-bottom: 0.2rem;
-
+.header > .navbar{
+    width: 1rem;
 }
-
-#menu-toggle:checked ~ .nav-menu {
-    right: 0;
+.header > .navbar> .logo{
+    right: 2.5rem;
 }
-
+.header > .navbar .nav-menu{
+   margin-left: -5rem;
 }
-
+.header > .navbar .nav-menu .nav-item{
+    padding-left: 2rem;
+}
+.hero{
+    width: 155vw;
+    position: relative;
+    transform: translateX(-20%);
+}
+}
